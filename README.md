@@ -121,3 +121,11 @@ Run the tests (Node 20+):
 ```sh
 npm test
 ```
+
+## Project management
+
+- **Tracker:** GitHub Issues on [`keller-solutions/chronomap`](https://github.com/keller-solutions/chronomap/issues). Every change starts from an issue.
+- **Find work:** `gh issue list -R keller-solutions/chronomap`; the `status:in-progress` and `status:in-review` labels mark work underway.
+- **Add a ticket:** `gh issue create -R keller-solutions/chronomap`. Write it as a user story (In order to / As a / I want) with testable acceptance criteria, and label it `story`, `bug`, `chore`, `epic` as fits. Security fixes get the `security` label and a `priority:` label.
+- **Link the work:** reference `#<number>` in commits and put `Closes #<number>` in the pull request body.
+- **Agent access:** agents use the GitHub CLI (`gh`) under the developer's own signed-in account (`gh auth status`); no extra token is needed. Keller Solutions agents follow the `managing-tickets` skill in the keller-solutions-core plugin.
